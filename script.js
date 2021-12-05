@@ -61,5 +61,6 @@ const closeModal = function() {
     modalResult.style.display = 'none';
     location.reload();
 };
-modalOverlay.addEventListener('click', closeModal);
+modalOverlay.addEventListener('click', closeModal);  // когда кликаем на темный фон либо на кнопку то запучкаем обработчи событий и в качестве второго аргумента передаем функцию в которой содержится сбрасывание стилей до начального значение
+
 modalBtnClose.addEventListener('click', closeModal);
